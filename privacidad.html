@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&S Ingenieria</title>
+    <meta name="description" content="A&S INGENIERIA S.A.S ofrece soluciones integrales en conectividad, fibra óptica, sistemas, análisis técnicos, cableado estructurado, seguridad, energía, obra civil y telecomunicaciones. Nos destacamos por nuestra calidad, eficiencia y excelencia operativa, entregando valor a los operadores del sector.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        .outfit-text {
+            font-family: "Outfit", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .outfit-title {
+            font-family: "Outfit", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f4f4f9;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            margin: 0;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px;
+            background-color: #d9e4f5;
+            color: white;
+            border-bottom: 4px solid #24678c;
+            position: sticky;
+            top: 0;
+            box-sizing: border-box;
+        }
+
+        .logo img {
+            height: 55px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #333333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            box-shadow: 0 4px 0 0 #24678c;
+        }
+
+        .button-container {
+            background-color: #ffcc00;
+            border: none;
+            color: #24678c;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 24px;
+            min-height: calc(100vh - 355px);
+            background-color: #f4f4f9;
+            /* Neutral light background */
+        }
+
+        .hero-content {
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            color: #1e1e2f;
+            margin: 0;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #333333;
+            /* Neutral dark text */
+            margin-bottom: 2rem;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background-color: #03dac5;
+            color: #1e1e2f;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-contact:hover {
+            background-color: #028d84;
+            color: white;
+        }
+
+        .hero-image {
+            max-width: 40%;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+       
+
+.footer {
+    background-color: #d9e4f5; /* Deep Navy Blue */
+    color: #1e1e2f;
+    padding: 24px;
+    text-align: center;
+    border-top: 4px solid #24678c;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-logo img {
+    height: 80px;
+}
+
+.footer-info {
+    font-size: 1rem;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.footer-info a, .hero a {
+    color: #24678c; /* Accent color */
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-policies {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.bottom-border-effect {
+    box-shadow: 0 4px 0 0 #24678c; /* Creates a "border" effect at the bottom */
+}
+
+
+.footer-policies a {
+    color: #24678c; /* Accent color */
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-policies a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 8px 12px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo img {
+        height: 45px;
+    }
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 32px 16px;
+    }
+    .hero-image {
+        max-width: 100vw;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    body > * {
+        text-align: center;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .hero-content {
+        width: 100vw;
+        padding: 0px 24px 24px 24px;
+        max-width: 100%;
+    }
+    .vision-mision {
+        flex-wrap: wrap;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+    }
+    .footer-info {
+        align-items: center;
+        justify-content: space-around;
+        gap: 8px;
+    }
+    .footer-info p {
+        margin: 4px;
+    }
+    .footer img {
+        height: 48px;
+    }
+    .footer {
+        padding: 32px 12px;
+    }
+    .clientes, .vision-mision {
+        padding: 40px 16px;
+        gap: 20px;
+    }
+    .clientes h2 {
+        margin-top: 0;
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .column {
+        padding: 16px;
+    }
+}
+
+    </style>
+</head>
+
+<body class="outfit-text">
+    <header>
+        <a href="./" class="logo">
+            <img src="./img/AySLogoSmall.png" alt="Logo">
+        </a>
+        <nav>
+            <a href="/index.html">Inicio</a>
+            <a href="/contacto.html">Contacto</a>
+            <a class="button-container" href="https://privateemail.com/">Intranet</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="outfit-title">Política de Privacidad y Protección de Datos</h1>
+            <div class="contact-info">
+                <p>
+                    La presente Política de Privacidad y Protección de Datos tiene como objetivo garantizar la confidencialidad, integridad y disponibilidad de los 
+                    datos personales recopilados, procesados, almacenados y compartidos por la organización, en cumplimiento con los principios de la norma ISO 27001 
+                    y la legislación aplicable en materia de protección de datos personales.
+                </p>
+                
+                <h3>1. Propósito</h3>
+                <p>
+                    Garantizar la confidencialidad, integridad y disponibilidad de los datos personales recopilados, procesados, almacenados y compartidos por la organización, 
+                    cumpliendo con los principios de la norma ISO 27001 y la legislación aplicable.
+                </p>
+                
+                <h3>2. Alcance</h3>
+                <p>Esta política aplica a:</p>
+                <ul>
+                    <li>Todos los empleados, contratistas, proveedores y partes interesadas que interactúan con información personal en la organización.</li>
+                    <li>Todos los datos personales, independientemente del formato (electrónico, físico, verbal, etc.).</li>
+                    <li>Todas las actividades relacionadas con el tratamiento de datos personales.</li>
+                </ul>
+                
+                <h3>3. Principios de Protección de Datos</h3>
+                <p>La organización adopta los siguientes principios basados en la ISO 27001:</p>
+                <ol>
+                    <li><strong>Confidencialidad:</strong> Aseguramos que los datos personales sean accesibles únicamente por personas autorizadas.</li>
+                    <li><strong>Integridad:</strong> Garantizamos la precisión y completitud de los datos personales.</li>
+                    <li><strong>Disponibilidad:</strong> Aseguramos que los datos personales estén disponibles cuando sea necesario para cumplir los fines establecidos.</li>
+                    <li><strong>Minimización de datos:</strong> Solo recopilamos los datos estrictamente necesarios para los fines establecidos.</li>
+                    <li><strong>Consentimiento informado:</strong> Nos aseguramos de que los titulares de los datos otorguen su consentimiento de manera clara y explícita.</li>
+                    <li><strong>Cumplimiento legal:</strong> Todas las actividades relacionadas con datos personales cumplen con las leyes y regulaciones aplicables.</li>
+                </ol>
+                
+                <h3>4. Responsabilidades</h3>
+                <ul>
+                    <li><strong>Responsable de la Seguridad de la Información (RSI):</strong> Diseñar, implementar y supervisar el Sistema de Gestión de Seguridad de la Información 
+                        (SGSI), incluyendo el tratamiento de datos personales.</li>
+                    <li><strong>Usuarios Internos:</strong> Cumplir con esta política y con las directrices establecidas para el manejo de datos personales.</li>
+                    <li><strong>Proveedores:</strong> Garantizar la protección de los datos personales en conformidad con los acuerdos contractuales y la legislación aplicable.</li>
+                </ul>
+                
+                
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/img/AySLogoSmall.png" alt="Logo">
+            </div>
+            <div class="footer-info">
+                <p><strong>Dirección:</strong> Carrera 65 #2-29, Medellín, Colombia</p>
+                <p><strong>Email:</strong> <a href="mailto:contacto@aysingenieria.co">contacto@aysingenieria.co</a></p>
+                <p><strong>Teléfono:</strong> <a href="tel: 3026833136">+57 302 683 3136</a></p>
+            </div>
+            <div class="footer-policies">
+                <a href="/calidad.html">Política de Calidad</a> |
+                <a href="/privacidad.html">Política de Privacidad y Protección de Datos</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
